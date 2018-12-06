@@ -3,28 +3,18 @@
     display: block;
     margin:30px;
 }
-nav {
-    float: left;
-    width: 240px;
-}
-#sample-panel {
-    margin-left: 240px;
-}
-h1.lesson-title {
-    padding: 0 0 20px 65px;
-    background: url('/assets/angular.ico') no-repeat;
-}
-nav h4 {
-    margin: 4px 0 10px 0;
-}
-nav a {
+
+a{
     text-decoration: none;
-    transition: all 0.5s;
-    color: #E03237;
 }
-nav a.active {
-    border-radius: 3px;
-    padding: 2px 8px;
-    background-color: #E03237;
-    color:white;
+a:hover{
+    color:red;
+}
+.active{
+    border-top:none;
+    border-left: none;
+    border-right:none;
+    border-bottom: 2px solid  dodgerblue;
+    color: dodgerblue;
+    width: max-content;
 }

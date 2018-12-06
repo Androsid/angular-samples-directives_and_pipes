@@ -3,20 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AttributeDirectivesModule } from './01-attribute-directives/attribute-directives.module';
-import { StructuralDirectivesModule } from './02-structural-directives/structural-directives.module';
-import { PipesModule } from './03-pipes/pipes.module';
+import { AttributeDirectivesModule } from './lesson1/01-attribute-directives/attribute-directives.module';
+import { StructuralDirectivesModule } from './lesson1/02-structural-directives/structural-directives.module';
+import { PipesModule } from './lesson1/03-pipes/pipes.module';
+import { Lesson1Component } from './lesson1/lesson1.component';
+import { Lesson2Component } from './lesson2/lesson2.component';
+import { Lesson2Module } from './lesson2/lesson2.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Lesson1Component,
+    Lesson2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AttributeDirectivesModule,
     StructuralDirectivesModule,
-    PipesModule
+    PipesModule,
+    Lesson2Module
   ],
   providers: [],
   bootstrap: [AppComponent]

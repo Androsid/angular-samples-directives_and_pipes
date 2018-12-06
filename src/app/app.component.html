@@ -1,30 +1,9 @@
 <h1 class="lesson-title">
-	Angular Advanced. Урок 1 - Directives and Pipes
+	Angular Advanced.
 </h1>
-
-<nav>
-	<h4>01-attribute-directive</h4>
-	<a routerLink="/sample1" routerLinkActive="active">01-simple-directive</a> <br />
-	<a routerLink="/sample2" routerLinkActive="active">02-event-directive</a> <br />
-	<a routerLink="/sample3" routerLinkActive="active">03-passing-data</a> <br />
-	<a routerLink="/sample4" routerLinkActive="active">04-passing-few-params</a> <br />
-	<a routerLink="/sample5" routerLinkActive="active">05-confirm-sample</a> <br />
-	<a routerLink="/sample6" routerLinkActive="active">06-mousemove-sample</a> <br />
-	<a routerLink="/sample7" routerLinkActive="active">07-host-binding-sample</a> <br />
-	<h4>02-structural-directives</h4>
-	<a routerLink="/sample8" routerLinkActive="active">01-my-if-sample</a> <br />
-	<a routerLink="/sample9" routerLinkActive="active">02-my-delay-sample</a> <br />
-	<a routerLink="/sample10" routerLinkActive="active">03-context-sample</a> <br />
-	<h4>03-pipes</h4>
-	<a routerLink="/sample11" routerLinkActive="active">01-builtin-pipes</a> <br />
-	<a routerLink="/sample12" routerLinkActive="active">02-chaining-sample</a> <br />
-	<a routerLink="/sample13" routerLinkActive="active">03-async-pipes</a> <br />
-	<a routerLink="/sample14" routerLinkActive="active">04-async-observable</a> <br />
-	<a routerLink="/sample15" routerLinkActive="active">05-simple-pipe-1</a> <br />
-	<a routerLink="/sample16" routerLinkActive="active">06-simple-pipe-2</a> <br />
-	<a routerLink="/sample17" routerLinkActive="active">07-pure-inpure</a> <br />
-</nav>
-
-<div id="sample-panel">
-	<router-outlet></router-outlet>
+<div style="margin: 25px;display:flex;flex-direction: column;">
+	<a routerLink="/lesson1" routerLinkActive="active">Урок 1 - Directives and Pipes</a>
+	<a routerLink="/lesson2-1" routerLinkActive="active">Урок 2 - 01_ReactiveForms</a>
+	<a routerLink="/lesson2-2" routerLinkActive="active">Урок 2 - 02_Validation</a>
 </div>
+<router-outlet></router-outlet>
