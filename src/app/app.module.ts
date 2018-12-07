@@ -12,6 +12,7 @@ import { Lesson2Module } from './lesson2/lesson2.module';
 import { DragNDropModule } from './drag-n-drop/drag-n-drop.module';
 import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
 import { CollectionViewerModule } from './collection-viewer/collection-viewer.module';
+import { AutocompleteModule } from './lesson2/autocomplete-sample/autocomplete.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CollectionViewerModule } from './collection-viewer/collection-viewer.mo
     PipesModule,
     Lesson2Module,
     DragNDropModule,
-    CollectionViewerModule
+    CollectionViewerModule,
+    AutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
