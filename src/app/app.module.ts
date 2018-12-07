@@ -9,12 +9,16 @@ import { PipesModule } from './lesson1/03-pipes/pipes.module';
 import { Lesson1Component } from './lesson1/lesson1.component';
 import { Lesson2Component } from './lesson2/lesson2.component';
 import { Lesson2Module } from './lesson2/lesson2.module';
+import { DragNDropModule } from './drag-n-drop/drag-n-drop.module';
+import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Lesson1Component,
-    Lesson2Component
+    Lesson2Component,
+    DragNDropComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,8 @@ import { Lesson2Module } from './lesson2/lesson2.module';
     AttributeDirectivesModule,
     StructuralDirectivesModule,
     PipesModule,
-    Lesson2Module
+    Lesson2Module,
+    DragNDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

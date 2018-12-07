@@ -24,6 +24,12 @@ import { Registration2Component } from "./lesson2/02_registration/registration.c
 import { Registration3Component } from "./lesson2/03_registration/registration.component";
 import { Registration4Component } from "./lesson2/04_registration/registration.component";
 import { Registration5Component } from "./lesson2/05_registration/registration.component";
+import { Registration6Component } from "./lesson2/06_customValidator/registration.component";
+import { Registration7Component } from "./lesson2/07_asyncValidator/registration.component";
+import { Registration8Component } from "./lesson2/08_asyncValidatorDep/registration.component";
+import { DragNDropComponent } from "./drag-n-drop/drag-n-drop.component";
+import { DragNDropCustomPreviewComponent } from "./drag-n-drop/drag-n-drop-custom-preview/drag-n-drop-custom-preview.component";
+import { DragNDropTodoComponent } from "./drag-n-drop/drag-n-drop-todo/drag-n-drop-todo.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "lesson1" },
@@ -56,9 +62,16 @@ const routes: Routes = [
       { path: "02_registration", component: Registration2Component },
       { path: "03_registration", component: Registration3Component },
       { path: "04_registration", component: Registration4Component },
-      { path: "05_registration", component: Registration5Component }
+      { path: "05_registration", component: Registration5Component },
+      { path: "01_custom-validator", component: Registration6Component },
+      { path: "02_custom-validator", component: Registration7Component },
+      { path: "03_custom-validator", component: Registration8Component }
     ]
-  }
+  },
+  { path: "drag-n-drop", component: DragNDropComponent, children: [
+    { path: "custom-preview", component: DragNDropCustomPreviewComponent },
+    { path: "todo", component: DragNDropTodoComponent }
+  ]}
 ];
 
 @NgModule({
