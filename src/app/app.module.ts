@@ -11,6 +11,7 @@ import { Lesson2Component } from './lesson2/lesson2.component';
 import { Lesson2Module } from './lesson2/lesson2.module';
 import { DragNDropModule } from './drag-n-drop/drag-n-drop.module';
 import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
+import { CollectionViewerModule } from './collection-viewer/collection-viewer.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,6 @@ import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
     Lesson1Component,
     Lesson2Component,
     DragNDropComponent
-    
   ],
   imports: [
     BrowserModule,
@@ -27,7 +27,8 @@ import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
     StructuralDirectivesModule,
     PipesModule,
     Lesson2Module,
-    DragNDropModule
+    DragNDropModule,
+    CollectionViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

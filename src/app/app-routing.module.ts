@@ -30,6 +30,7 @@ import { Registration8Component } from "./lesson2/08_asyncValidatorDep/registrat
 import { DragNDropComponent } from "./drag-n-drop/drag-n-drop.component";
 import { DragNDropCustomPreviewComponent } from "./drag-n-drop/drag-n-drop-custom-preview/drag-n-drop-custom-preview.component";
 import { DragNDropTodoComponent } from "./drag-n-drop/drag-n-drop-todo/drag-n-drop-todo.component";
+import { CollectionViewerComponent } from "./collection-viewer/collection-viewer.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "lesson1" },
@@ -68,10 +69,13 @@ const routes: Routes = [
       { path: "03_custom-validator", component: Registration8Component }
     ]
   },
-  { path: "drag-n-drop", component: DragNDropComponent, children: [
-    { path: "custom-preview", component: DragNDropCustomPreviewComponent },
-    { path: "todo", component: DragNDropTodoComponent }
-  ]}
+  {
+    path: "drag-n-drop", component: DragNDropComponent, children: [
+      { path: "custom-preview", component: DragNDropCustomPreviewComponent },
+      { path: "todo", component: DragNDropTodoComponent }
+    ]
+  },
+  { path: "collection-viewer", component: CollectionViewerComponent }
 ];
 
 @NgModule({
