@@ -13,6 +13,8 @@ import { DynamicFormSampleComponent } from './dynamic-form-sample/dynamic-form-s
 import { DynamicFormComponent } from './dynamic-form-sample/dynamic-form/dynamic-form.component';
 import { DynamicFormElementComponent } from './dynamic-form-sample/dynamic-form/dynamic-form-element.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { ChangeLayoutComponent } from './change-layout/change-layout.component';
+import { MyGridComponent } from './change-layout/my-grid/my-grid.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { BrowserModule } from '@angular/platform-browser';
     Registration8Component,
     DynamicFormSampleComponent,
     DynamicFormComponent,
-    DynamicFormElementComponent
+    DynamicFormElementComponent,
+    ChangeLayoutComponent,
+    MyGridComponent
   ],
   imports: [
     CommonModule,

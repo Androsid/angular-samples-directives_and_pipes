@@ -33,6 +33,7 @@ import { DragNDropTodoComponent } from "./drag-n-drop/drag-n-drop-todo/drag-n-dr
 import { CollectionViewerComponent } from "./collection-viewer/collection-viewer.component";
 import { DynamicFormSampleComponent } from "./lesson2/dynamic-form-sample/dynamic-form-sample.component";
 import { AutocompleteSampleComponent } from "./lesson2/autocomplete-sample/autocomplete-sample.component";
+import { ChangeLayoutComponent } from "./lesson2/change-layout/change-layout.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "lesson1" },
@@ -69,8 +70,9 @@ const routes: Routes = [
       { path: "01_custom-validator", component: Registration6Component },
       { path: "02_custom-validator", component: Registration7Component },
       { path: "03_custom-validator", component: Registration8Component },
-      { path: "dynamic-form", component: DynamicFormSampleComponent},
-      { path: "autocomplete", component: AutocompleteSampleComponent}
+      { path: "dynamic-form", component: DynamicFormSampleComponent },
+      { path: "autocomplete", component: AutocompleteSampleComponent },
+      { path: "layout-container", component: ChangeLayoutComponent }
     ]
   },
   {
