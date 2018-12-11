@@ -13,13 +13,16 @@ import { DragNDropModule } from './drag-n-drop/drag-n-drop.module';
 import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
 import { CollectionViewerModule } from './collection-viewer/collection-viewer.module';
 import { AutocompleteModule } from './lesson2/autocomplete-sample/autocomplete.module';
+import { Lesson3Component } from './lesson3/lesson3.component';
+import { Lesson3Module } from './lesson3/lesson3.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     Lesson1Component,
     Lesson2Component,
-    DragNDropComponent
+    DragNDropComponent,
+    Lesson3Component
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { AutocompleteModule } from './lesson2/autocomplete-sample/autocomplete.m
     Lesson2Module,
     DragNDropModule,
     CollectionViewerModule,
-    AutocompleteModule
+    AutocompleteModule,
+    Lesson3Module
   ],
   providers: [],
   bootstrap: [AppComponent]
