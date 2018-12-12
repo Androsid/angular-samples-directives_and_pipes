@@ -15,6 +15,11 @@ import { CollectionViewerModule } from './collection-viewer/collection-viewer.mo
 import { AutocompleteModule } from './lesson2/autocomplete-sample/autocomplete.module';
 import { Lesson3Component } from './lesson3/lesson3.component';
 import { Lesson3Module } from './lesson3/lesson3.module';
+import { Lesson4Component } from './lesson4/lesson4.component';
+import { ChangeDetectionModule } from './lesson4/01-change-detection/change-detection.module';
+import { CdStrategiesModule } from './lesson4/02-cd-strategies/cd-strategies.module';
+import { DoCheckSampleModule } from './lesson4/03-do-check-sample/do-check-sample.module';
+import { ImmutablejsModule } from './lesson4/04-immutablejs/immutablejs.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,8 @@ import { Lesson3Module } from './lesson3/lesson3.module';
     Lesson1Component,
     Lesson2Component,
     DragNDropComponent,
-    Lesson3Component
+    Lesson3Component,
+    Lesson4Component
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,11 @@ import { Lesson3Module } from './lesson3/lesson3.module';
     DragNDropModule,
     CollectionViewerModule,
     AutocompleteModule,
-    Lesson3Module
+    Lesson3Module,
+    ChangeDetectionModule,
+    CdStrategiesModule,
+    DoCheckSampleModule,
+    ImmutablejsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

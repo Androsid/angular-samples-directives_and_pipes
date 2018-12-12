@@ -53,6 +53,16 @@ import { SubjectComponent } from "./lesson3/03-observable-samples/08-subject/sub
 import { BehaviorSubjectComponent } from "./lesson3/03-observable-samples/09-behavior-subject/behavior-subject.component";
 import { HttpSampleComponent } from "./lesson3/03-observable-samples/10-http-sample/http-sample.component";
 import { MainCompComponent } from "./lesson3/04-service/main-comp/main-comp.component";
+import { Lesson4Component } from "./lesson4/lesson4.component";
+import { CdSampleComponent } from "./lesson4/01-change-detection/cd-sample/cd-sample.component";
+import { CdStrategiesSampleComponent } from "./lesson4/02-cd-strategies/cd-strategies-sample/cd-strategies-sample.component";
+import { MainComponent } from "./lesson4/03-do-check-sample/main/main.component";
+import { MutableVsImmutableComponent } from "./lesson4/04-immutablejs/01-mutable-vs-immutable/mutable-vs-immutable.component";
+import { ObjectAssignComponent } from "./lesson4/04-immutablejs/02-object-assign/object-assign.component";
+import { ObjectFreezeComponent } from "./lesson4/04-immutablejs/03-object-freeze/object-freeze.component";
+import { ImmutableMapComponent } from "./lesson4/04-immutablejs/04-immutable-map/immutable-map.component";
+import { FromJsComponent } from "./lesson4/04-immutablejs/05-from-js/from-js.component";
+import { ImmutableListComponent } from "./lesson4/04-immutablejs/06-immutable-list/immutable-list.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "lesson1" },
@@ -120,7 +130,19 @@ const routes: Routes = [
     { path: "sample16", component: BehaviorSubjectComponent },
     { path: "sample17", component: HttpSampleComponent },
     { path: "sample18", component: MainCompComponent }
-  ] }
+  ] },
+  { path: "lesson4", component: Lesson4Component, children: [
+    { path: "sample1", component: CdSampleComponent },
+    { path: "sample2", component: CdStrategiesSampleComponent },
+    { path: "sample3", component: MainComponent },
+    { path: "sample4", component: MutableVsImmutableComponent },
+    { path: "sample5", component: ObjectAssignComponent },
+    { path: "sample6", component: ObjectFreezeComponent },
+    { path: "sample7", component: ImmutableMapComponent },
+    { path: "sample8", component: FromJsComponent },
+    { path: "sample9", component: ImmutableListComponent }
+  ]
+}
 ];
 
 @NgModule({
